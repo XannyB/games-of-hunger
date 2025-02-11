@@ -1,0 +1,7 @@
+body {
+    background-color: #000; /* Black background */
+    color: #00FF00; /* Green text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for console look */
+    margin: 0;
+    padding: 20px; /* Add some padding around the content */
+}
