@@ -1,4 +1,9 @@
 function removeCharacters(id, speed, ...params) {
+
+    if (document.getElementById('button')) {
+        document.getElementById('button').remove();
+    }
+
     const getMainContent = document.getElementById(id);
     
     // setInterval runs continuously, per ms, until stopped
@@ -10,8 +15,6 @@ function removeCharacters(id, speed, ...params) {
             clearInterval(intervalId);
 
             if (params[0] != undefined) {
-                console.log("Parameters given.");
-
                 removeCharacters(params.shift(), params.shift(), ...params);
             }
 
