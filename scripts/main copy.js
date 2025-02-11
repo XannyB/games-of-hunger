@@ -1,8 +1,8 @@
 function removeCharacters(id, speed, ...params) {
-    // remove button first
     if (document.getElementById('button')) {
         document.getElementById('button').remove();
     }
+
     
     const getMainContent = document.getElementById(id);
     
