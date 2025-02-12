@@ -7,23 +7,29 @@
     <title>Games of Hunger</title>
     <link rel="stylesheet" type="text/css" href="styles\style.css">
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/tools.js"></script>
 </head>
 
 <body>
-    <h1 id="main_h1">Games of Hunger: Control Console</h1>
-    <h2 id="main_h2">Arena Setup</h2>
+    <!-- <div id="overlay-hideall"></div> -->
+    <div class="overlay_filter"></div>
+    <h1 id="main_h1">GAMES OF HUNGER: COMMAND CONSOLE</h1>
+    <h2 id="main_h2">ARENA SETUP</h2>
     <div id="main_content">
-        <p>Description.</p>
-        <p>Aim of simulation.</p>
-        <p>Some more text.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quidem cum porro nam praesentium est
-            cupiditate consequuntur sequi? Modi perferendis voluptatem asperiores minus tempora nisi, consectetur quidem
-            aliquam corporis fugit necessitatibus at, cupiditate, aliquid explicabo mollitia optio dolores assumenda
-            laborum. Perferendis illum animi cum molestias, consectetur nam quaerat obcaecati beatae.</p>
+        <p>Welcome to the Games of Hunger command terminal. With this software, will control and monitor the outcome of the games.</p>
+        <p>The games are simple; Up to 12 participants are placed in the arena to fight to the death. Whether they
+            choose to do this straight away, or wait it out until they have an advantage, is up to them. Perhaps they
+            will form temporary groups to survive the wilderness and rivals, perhaps not. it is all up to them. What is
+            certain though, is there may only be one victor.
+            who.</p>
+        <p>From this terminal you will have full control of who goes in and full access to monitoring systems. It is possible outside forces may send in supplies to their favourite assets. they may even have help rgith from the start. This can be unavoided as per the rules of the games. However, through this terminal you may be able to alter the arena itself. Making it harder for particular participants or just to make the games more interesting.</p>
+        <p>We hope you enjoy your experience today. Please start with initial setup buy selecting the below START button.</p>
     </div>
     <!--<button onclick="removeCharacters('main_content', removeCharacters('main_h1', removeCharacters('main_h2'))); ;">Remove Characters</button>-->
-    <button id="button" onclick="removeCharacters('main_content', 0.0000025, 'main_h2', 25, 'main_h1', 25);">Remove Characters</button>
+    <button style="display: block; margin: 20px auto;" id="button"
+        onclick="removeCharacters('main_content', 0.00000000000000000000000001, 'main_h2', 10, 'main_h1', 10);">START</button>
 
+    <script>revealCharacters('main_content', 100);</script>
 </body>
 
 </html>

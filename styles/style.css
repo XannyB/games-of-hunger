@@ -1,7 +1,72 @@
+#overlay-hideall {
+    background: #000;
+    display: block;
+    position: fixed;
+    height : 100vh ;
+    width : 100vw ;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
+
 body {
+    z-index: 10;
     background-color: #000; /* Black background */
-    color: #00FF00; /* Green text */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for console look */
     margin: 0;
     padding: 20px; /* Add some padding around the content */
+    /* text-align: justify; */
+}
+
+body, button {
+    color: #00FF00; /* Green text */
+    font-family: 'PerfectDOSVGA437', monospace;
+    text-shadow: 0.1em 0.05em 0.1em #009100, -0.05em -0.05em 0.1em #1fb900;
+    font-size: 1.0em;
+    font-weight: 0;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+#main_content {
+    position: relative;
+    z-index: 1;  /* keep on top */
+}
+
+button {
+    font-size: 1.5em;
+    background-color: #000;
+    border: 2px solid break;
+}
+
+button:hover {
+    background-color: green;
+    border: 2px solid break;
+}
+
+@font-face {
+    font-family: 'PerfectDOSVGA437';
+    src: url('../fonts/Perfect DOS VGA 437 Win.ttf') format('truetype'),
+         url('../fonts/Perfect DOS VGA 437.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Customize selected text */
+::selection {
+    background-color: #ffcc00; /* Change background color */
+    color: white;              /* Change text color */
+}
+
+/* For Firefox specifically */
+::-moz-selection {
+    background-color: #ffcc00;
+    color: white;
 }
