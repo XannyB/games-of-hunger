@@ -1,0 +1,18 @@
+elements:
+  - tag: h1
+    content: "GAMES OF HUNGER: COMMAND CONSOLE"
+    id: "main_h1"
+  - tag: h2
+    content: "ARENA SETUP"
+    id: "main_h2"
+  - tag: div
+    id: "main_content"
+    children:
+      - tag: p
+        content: "Welcome to the Games of Hunger command terminal. With this software, you will control and monitor the outcome of the games."
+      - tag: p
+        content: "The games are simple; Up to 12 participants are placed in the arena to fight to the death. Whether they choose to do this straight away, or wait it out until they have an advantage, is up to them. Perhaps they will form temporary groups to survive the wilderness and rivals. Perhaps not. It is all up to them. What is certain though, is there may only be one victor."
+      - tag: p
+        content: "From this terminal you will have full control of who goes in and full access to monitoring systems. It is possible outside forces may send in supplies to their favourite assets. They may even have help right from the start. This can be unavoided as per the rules of the games. However, through this terminal you may be able to alter the arena itself. Making it harder for particular participants or just to make the games more interesting."
+      - tag: p
+        content: "We hope you enjoy your experience today. Please start with initial setup by selecting the below START button."

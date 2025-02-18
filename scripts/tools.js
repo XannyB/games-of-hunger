@@ -44,25 +44,33 @@ function removeCharacters(id, speed, ...params) {
     }, speed); // Adjust the delay (in milliseconds) to control the speed
 }
 
-function revealCharacters(id, speed, ...params) {
+function removeContent () {
+
+}
+
+function writeContent () {
+    
+}
+
+function revealCharacters(...params) { // id then speed
+    //code to store all html tag information into an array
+    
     //code to remove and store content of each tag
     
-    let contentArray = [].push(id, speed, ...params);
-    let speedArray = [].push
+    let newContentArray = [];
+    let speedArray = [];
 
-
-
-    let clonedArray = [];
-
-    for (i = 0; i < contentArray.length; i++) {
-        clonedArray.push(contentArray[i.cloneNode(true)]);
+    for (let i = 0; i < arguments.length; i++){
+        if (i == 0 || i % 2 == 0){
+            const idContent = document.getElementById(arguments[i]);
+            newContentArray.push(idContent); // even adds content by id
+        } else {
+            speedArray.push(arguments[i]); // odd adds speed values per id
+        }
     }
 
-    const clonedContent = contentArray.cloneNode(true);
-
-    console.log(contentArray);
-    console.log(clonedContent);
-
+    console.log(newContentArray);
+    console.log(speedArray);
 
     //code to delete overlay hiding 'real' web page
 
