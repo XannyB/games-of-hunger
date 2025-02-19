@@ -52,6 +52,10 @@ function writeContent () {
     
 }
 
+function renderContentFromData(data){
+    
+}
+
 function revealCharacters(...params) { // id then speed
     //code to store all html tag information into an array
     
